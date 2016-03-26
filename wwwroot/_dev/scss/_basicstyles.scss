@@ -1,0 +1,332 @@
+@import "_variables.scss";
+
+* {
+	// @include transition(all .25s);
+	box-sizing: border-box;
+	&:focus {
+		outline: rgba($q-color-template-1, 100)
+	}
+}
+
+
+html {
+
+	::selection {
+		color: $q-color-template-1;
+		background-color: rgba($q-color-template-1, .2);
+	}
+
+	
+
+}
+
+body {
+
+	font-family: $q-fonts-1;
+	font-size: 18px;
+	line-height: 1.6rem;
+	background: #fff;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $q-fonts-2;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	line-height: 1.2em;
+	&:first-child {
+		margin-top: 0;
+	}
+	&:last-child {
+		margin-top: 0;
+	}
+}
+
+h1 {
+	color: $q-color-template-1;
+}
+
+h2 {
+	color: $q-color-template-1;
+	text-align:center;
+	font-size: 4rem;
+	margin-bottom: 50px;
+}
+
+h3 {
+	font-size: 3rem;
+	font-weight: 300;
+	letter-spacing: -2px;
+	color: #000;
+	span {
+		color: $q-color-template-1;
+	}
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: $q-media-breakpoint-2 - 1) {
+
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 2em;
+		margin-bottom: 0.5em;
+	}
+
+}
+
+
+p { 
+	margin-bottom: 1.4em;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+a {
+
+	@include transition-property(color);
+	@include transition-duration(.25s);
+
+	text-decoration: none;
+	border-color: $q-color-link;
+	color: $q-color-link;
+
+	&:focus {
+		color: darken($q-color-link, 10%);
+		border-color: darken($q-color-link, 10%);
+	}
+	&:hover {
+		color: lighten($q-color-link, 10%);
+		border-color: lighten($q-color-link, 10%);
+	}
+	
+}
+
+a::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
+strong {
+	font-weight: bold;
+	color: #385670;
+}
+
+em {
+	font-style: italic;
+}
+
+select,
+input[type="text"],
+input[type="file"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+
+	@include q-input-style();
+
+}
+
+select {
+
+	@include q-input-style();
+	
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled] {
+	opacity: 0.5;
+	background-color: #e6e6e6;
+	&:hover {
+		border-color: #e6e6e6;
+	}
+}
+
+
+ul, ol {
+	
+	nav & {
+		margin-left: 0;
+		margin-bottom: 0;
+		li {
+			list-style: none;
+			margin-bottom: 0;
+		}
+	}
+	
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+
+ul li, ol li {
+	color: $q-color-primary;
+	margin-left:1rem;
+	margin-bottom: 0.25rem;
+	p {
+		color: #87a0ab;
+	}
+}
+
+ul li, ul li li {
+	list-style: square;
+}
+
+
+hr {
+	border: 0;
+    height: 0;
+    margin: 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+img {
+	
+}
+
+blockquote {
+
+	margin: 10px;
+	padding: 50px;
+
+	text-align: center;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 700;
+
+	background: #edf4fa;
+
+	cite {
+		display:block;
+		font-style: italic;
+		font-weight: 300;
+	}
+
+}
+
+@media (max-width: $q-media-breakpoint-4 - 1) {
+	blockquote {
+		box-shadow: 0 0 20px rgba(0,0,0,.1);	
+	}
+}
+
+
+nav {
+
+	ul li,
+	ol li {
+
+		margin-left: 0;
+		margin-bottom: 0;
+
+	}
+
+}
+
+form {
+	label {
+		text-align: left;
+	}
+}
+
+fieldset {
+
+	border: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+legend {
+	
+}
+
+label {
+	@include q-label-style();
+}
+
+
+table {
+
+	width: 100%;
+	margin-bottom:20px;
+
+	tr {
+		border-top: 1px solid #eee
+	}
+
+	th,
+	td {
+		padding:10px;
+		text-align: left;
+		vertical-align:middle;
+		&:last-of-type {
+			text-align:right;
+			padding-right: 0;
+		}
+		&:first-of-type {
+			padding-left:0;
+		}
+	}
+
+	th:first-child,
+	td:first-child {
+		width:150px;
+		font-weight:bold;
+	}
+
+	th:last-child,
+	td:last-child {
+		width: 150px;
+	}
+
+	thead {
+		tr {
+			border-top: 0;
+		}
+		th {
+			// padding: 10px 0;
+		}
+	}
+
+}
+
+
+

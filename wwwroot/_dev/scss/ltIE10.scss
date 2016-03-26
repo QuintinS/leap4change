@@ -1,0 +1,17 @@
+label.hidden {
+	display: block !important;
+}
+
+#page-login {
+	.background {
+		img {
+			filter: alpha(opacity=10);
+		}
+	}
+}
+
+.background {
+	&:after {
+		content:none;
+	}
+}

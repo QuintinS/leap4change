@@ -1,0 +1,49 @@
+/* Basic Colours */ 
+
+$q-color-darkred: #f7df53;
+$q-color-pink: #f38cb9;
+$q-color-blue: #30bce9;
+$q-color-green: #b4d455;
+$q-color-seagreen: #116f50;
+$q-color-lightgreen: #9abf3d;
+$q-color-orange: #f77a20;
+$q-color-yellow: #f7df53;
+$q-color-darkgrey: #333;
+$q-color-midgrey: #666;
+$q-color-lightgrey: #999;
+$q-color-offwhite: #e6e6e6;
+$q-color-red: #ec0b14;
+
+// $q-color-template-1: #e51b23;
+$q-color-template-1: #0f89ca;
+$q-color-template-2: #222222;
+$q-color-template-3: #1d1d1d;
+
+/* Basic Style Colours */
+
+$q-color-background: #222;
+
+$q-color-body: $q-color-darkgrey;
+$q-color-headings-1: $q-color-template-1;
+$q-color-headings-2: #fff;
+
+$q-color-default: $q-color-offwhite;
+$q-color-primary: #f9a812;
+$q-color-success: $q-color-green;
+$q-color-warning: $q-color-orange;
+$q-color-danger: $q-color-red;
+$q-color-info: $q-color-blue;
+
+$q-color-link: $q-color-template-1;
+$q-color-label: $q-color-link;
+
+$q-color-input-border: $q-color-default;
+
+$q-fonts-1: "Lato", "Open Sans", Helvetica, Arial, sans-serif;
+$q-fonts-2: "Densia Sans", Helvetica, Arial, sans-serif;
+
+$q-media-breakpoint-1: 350px;
+$q-media-breakpoint-2: 500px;
+$q-media-breakpoint-3: 600px;
+$q-media-breakpoint-4: 1060px;
+$q-media-breakpoint-5: 1400px;

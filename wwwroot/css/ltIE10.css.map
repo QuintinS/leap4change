@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,YAAa,CACZ,OAAO,CAAE,gBAAgB,CAKxB,2BAAI,CACH,MAAM,CAAE,iBAAiB,CAM3B,iBAAQ,CACP,OAAO,CAAC,IAAI",
+"sources": ["../_dev/scss/ltIE10.scss"],
+"names": [],
+"file": "ltIE10.css"
+}

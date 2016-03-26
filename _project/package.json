@@ -1,0 +1,22 @@
+{
+  "name": "OddSquad-Grunt",
+  "version": "0.0.1",
+  "description": "The front-end development framework for OddSquad.",
+  "author": {
+    "name": "Quintin Schnehage",
+    "e-mail": "quintin.schnehage@gmail.com"
+  },
+  "license": "All Rights Reserved",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "compass": "*",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-compass": "~1.0.1",
+    "grunt-contrib-uglify": "~0.7.0",
+    "matchdep": "~0.3.0"
+  },
+  "repository": "https://github.com/QuintinS/buildstyleguide.git",
+  "devDependencies": {
+    "grunt-play": "^0.1.0"
+  }
+}

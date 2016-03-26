@@ -1,0 +1,223 @@
+@import "compass";
+@import "compass/css3/animation";
+// @import "_variables.scss";
+// @import "_mixins.scss";
+
+
+/* 	========================================
+	Typography
+	======================================== */
+
+.q-bold { font-weight: bold !important; }
+.q-italic { font-style: italic !important; }
+.q-spacer { margin-bottom: 1em;}
+
+.q-word-wrap {
+	
+	-ms-word-break: break-all;
+
+     /* Be VERY careful with this, breaks normal words wh_erever */
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+
+}
+
+.q-text-align-left { text-align:left !important;}
+.q-text-align-right { text-align:right !important;}
+.q-text-align-center { text-align:center !important;}
+
+.q-overflow-scroll { overflow: scroll !important;}
+.q-overflow-hidden { overflow: hidden !important;}
+.q-overflow-visible { overflow: visible !important;}
+
+
+/* 	========================================
+	Layout
+	======================================== */
+
+ul.noindent,
+ol.noindent {
+	li {
+		margin-left: 0 !important
+	}
+}
+
+.q-hidden { visibility-hidden:none; }
+.q-full { display:block; width:100%; }
+
+.q-display-block { display:block !important;}
+.q-display-inline-block { display:inline-block !important;}
+.q-display-inline { display:inline !important;}
+.q-display-table { display:table !important;}
+
+.q-float-left {float:left !important;}
+.q-float-right {float:right !important;}
+
+.q-no-padding { padding: 0 !important;} 
+
+.q-padding-top-10 { padding-top: 10px !important}
+.q-padding-top-20 { padding-top: 20px !important}
+.q-padding-top-30 { padding-top: 30px !important}
+.q-padding-top-40 { padding-top: 40px !important}
+.q-padding-top-50 { padding-top: 50px !important}
+.q-padding-top-60 { padding-top: 60px !important}
+.q-padding-top-70 { padding-top: 70px !important}
+.q-padding-top-80 { padding-top: 80px !important}
+.q-padding-top-90 { padding-top: 90px !important}
+.q-padding-top-100 { padding-top: 100px !important}
+
+.q-padding-left-10 { padding-left: 10px !important}
+.q-padding-left-20 { padding-left: 20px !important}
+.q-padding-left-30 { padding-left: 30px !important}
+.q-padding-left-40 { padding-left: 40px !important}
+.q-padding-left-50 { padding-left: 50px !important}
+.q-padding-left-60 { padding-left: 60px !important}
+.q-padding-left-70 { padding-left: 70px !important}
+.q-padding-left-80 { padding-left: 80px !important}
+.q-padding-left-90 { padding-left: 90px !important}
+.q-padding-left-100 { padding-left: 100px !important}
+
+.q-padding-right-10 { padding-right: 10px !important}
+.q-padding-right-20 { padding-right: 20px !important}
+.q-padding-right-30 { padding-right: 30px !important}
+.q-padding-right-40 { padding-right: 40px !important}
+.q-padding-right-50 { padding-right: 50px !important}
+.q-padding-right-60 { padding-right: 60px !important}
+.q-padding-right-70 { padding-right: 70px !important}
+.q-padding-right-80 { padding-right: 80px !important}
+.q-padding-right-90 { padding-right: 90px !important}
+.q-padding-right-100 { padding-right: 100px !important}
+
+.q-padding-bottom-10 { padding-bottom: 10px !important}
+.q-padding-bottom-20 { padding-bottom: 20px !important}
+.q-padding-bottom-30 { padding-bottom: 30px !important}
+.q-padding-bottom-40 { padding-bottom: 40px !important}
+.q-padding-bottom-50 { padding-bottom: 50px !important}
+.q-padding-bottom-60 { padding-bottom: 60px !important}
+.q-padding-bottom-70 { padding-bottom: 70px !important}
+.q-padding-bottom-80 { padding-bottom: 80px !important}
+.q-padding-bottom-90 { padding-bottom: 90px !important}
+.q-padding-bottom-100 { padding-bottom: 100px !important}
+
+.q-no-margin { margin: 0}
+
+.q-margin-top-10 { margin-top: 10px !important;}
+.q-margin-top-20 { margin-top: 20px !important;}
+.q-margin-top-30 { margin-top: 30px !important;}
+.q-margin-top-40 { margin-top: 40px !important;}
+.q-margin-top-50 { margin-top: 50px !important;}
+.q-margin-top-60 { margin-top: 60px !important;}
+.q-margin-top-70 { margin-top: 70px !important;}
+.q-margin-top-80 { margin-top: 80px !important;}
+.q-margin-top-90 { margin-top: 90px !important;}
+.q-margin-top-100 { margin-top: 100px !important;}
+
+.q-margin-left-10 { margin-left: 10px !important;}
+.q-margin-left-20 { margin-left: 20px !important;}
+.q-margin-left-30 { margin-left: 30px !important;}
+.q-margin-left-40 { margin-left: 40px !important;}
+.q-margin-left-50 { margin-left: 50px !important;}
+.q-margin-left-60 { margin-left: 60px !important;}
+.q-margin-left-70 { margin-left: 70px !important;}
+.q-margin-left-80 { margin-left: 80px !important;}
+.q-margin-left-90 { margin-left: 90px !important;}
+.q-margin-left-100 { margin-left: 100px !important;}
+
+.q-margin-right-10 { margin-right: 10px !important;}
+.q-margin-right-20 { margin-right: 20px !important;}
+.q-margin-right-30 { margin-right: 30px !important;}
+.q-margin-right-40 { margin-right: 40px !important;}
+.q-margin-right-50 { margin-right: 50px !important;}
+.q-margin-right-60 { margin-right: 60px !important;}
+.q-margin-right-70 { margin-right: 70px !important;}
+.q-margin-right-80 { margin-right: 80px !important;}
+.q-margin-right-90 { margin-right: 90px !important;}
+.q-margin-right-100 { margin-right: 100px !important;}
+
+.q-margin-bottom-10 { margin-bottom: 10px !important;}
+.q-margin-bottom-20 { margin-bottom: 20px !important;}
+.q-margin-bottom-30 { margin-bottom: 30px !important;}
+.q-margin-bottom-40 { margin-bottom: 40px !important;}
+.q-margin-bottom-50 { margin-bottom: 50px !important;}
+.q-margin-bottom-60 { margin-bottom: 60px !important;}
+.q-margin-bottom-70 { margin-bottom: 70px !important;}
+.q-margin-bottom-80 { margin-bottom: 80px !important;}
+.q-margin-bottom-90 { margin-bottom: 90px !important;}
+.q-margin-bottom-100 { margin-bottom: 100px !important;}
+
+.q-width-10-percent { width: 10% !important;}
+.q-width-20-percent { width: 20% !important;}
+.q-width-30-percent { width: 30% !important;}
+.q-width-40-percent { width: 40% !important;}
+.q-width-50-percent { width: 50% !important;}
+.q-width-60-percent { width: 60% !important;}
+.q-width-70-percent { width: 70% !important;}
+.q-width-80-percent { width: 80% !important;}
+.q-width-90-percent { width: 90% !important;}
+.q-width-100-percent { width: 100% !important;}
+
+.q-max-width-100 { max-width: 100px !important}
+.q-max-width-200 { max-width: 200px !important}
+.q-max-width-300 { max-width: 300px !important}
+.q-max-width-400 { max-width: 400px !important}
+.q-max-width-500 { max-width: 500px !important}
+.q-max-width-600 { max-width: 600px !important}
+.q-max-width-700 { max-width: 700px !important}
+.q-max-width-800 { max-width: 800px !important}
+.q-max-width-900 { max-width: 900px !important}
+.q-max-width-1000 { max-width: 1000px !important}
+
+.q-width-100 { width: 100px !important}
+.q-width-200 { width: 200px !important}
+.q-width-300 { width: 300px !important}
+.q-width-400 { width: 400px !important}
+.q-width-500 { width: 500px !important}
+.q-width-600 { width: 600px !important}
+.q-width-700 { width: 700px !important}
+.q-width-800 { width: 800px !important}
+.q-width-900 { width: 900px !important}
+.q-width-1000 { width: 1000px !important}
+
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+
+/* 	========================================
+	Animations
+	======================================== */
+
+
+	.animation {
+
+		&.infinite {
+
+			@include animation(rotate 0.5s infinite linear);
+
+		}
+
+		&.rotate {
+			@include animation-name(rotate-360);
+		}
+
+	}
+
+	@include keyframes (rotate)  {
+		0% {
+			@include rotate(0deg);
+		}
+		100% {
+			@include rotate(360deg);
+		}
+	}

@@ -1,0 +1,13 @@
+.tooltipster-build {
+	border-radius: 2px;
+	background: #444;
+	border-color: #333;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+	color: #fff;
+}
+.tooltipster-build .tooltipster-content {
+	font-family: $q-fonts-1;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 8px 10px;
+}

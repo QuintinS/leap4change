@@ -1,0 +1,41 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "susy";
+@import "compass";
+@import "compass/reset";
+
+$susy: (
+	global-box-sizing: border-box,
+	use-custom: (em: true),
+	gutters: 1/3,
+);
+
+$total-columns: 12;
+$column-width: 60px;
+$gutter-width: 20px;
+$grid-padding: 10px;
+
+@import "_mixins";
+@import "_variables.scss";
+@import "_fonts.scss";
+@import "_basicstyles.scss";
+@import "_components.scss";
+@import "_superfish.scss";
+@import "_fonts.scss";
+@import "_layout.scss";
+@import "_layout-page-1.scss";
+@import "_layout-page-2.scss";
+@import "_layout-page-3.scss";
+@import "_layout-page-4.scss";
+@import "_layout-page-5.scss";
+@import "_animations.scss";
+@import "_utilityclasses.scss";
+@import "_thirdparty-parallax.scss";
+@import "_thirdparty-animate.scss";
+@import "_thirdparty-tooltipster.scss";
+@import "_thirdparty-tooltipster-themes.scss";
+@import "_thirdparty-flexslider.scss";
+

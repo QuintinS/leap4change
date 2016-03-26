@@ -1,0 +1,35 @@
+
+/* 	-----------------------------------
+ 	Biography Page
+ 	-----------------------------------	*/
+
+		.bio-portrait-container {
+
+			position:relative;
+			z-index:1;
+			max-width: 400px;
+			border-radius: 1000px;
+			display:inline-block;
+			overflow:hidden;
+
+			> .bio-portrait {
+
+				padding:0;
+				border:0;
+				width:100%;
+
+				-webkit-filter: grayscale(0%);
+				-webkit-backface-visibility: hidden;
+				-webkit-font-smoothing:antialiased;
+				outline: 1px solid transparent;
+				
+				-webkit-transition: 0.5s all;
+				// @include filter(grayscale(100%));
+
+				&:hover {
+					opacity:1;
+				}
+
+			}
+
+		}

@@ -1,0 +1,179 @@
+@mixin q-label-style() {
+
+	// color: $q-color-template-1;
+	color: #385670;
+	font-weight:bold;
+	margin-top: 1em;
+	margin-bottom: 5px;
+	// margin-top:1em;
+	display:inline-block;
+
+}
+
+
+@mixin q-input-style() {
+
+	@include transition-duration(0.25s);
+	@include transition-property(box-shadow, background, color, border);
+
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #ddd;
+
+	font-size: 16px;
+	font-family: $q-fonts-1;
+
+	@include box-shadow(0 0 5px rgba(0,0,0,.1) inset);
+
+	&:focus {
+		border-color: $q-color-template-1;
+	}
+
+	&:hover {
+		border-color: $q-color-template-1;
+	}
+
+	&:active {
+		border-color: $q-color-template-1;
+	}
+
+	> span {
+		color: #b0acbf;
+	}
+
+}
+
+@mixin q-no-select() {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;  
+}
+
+@mixin q-button-style($myColor) {
+
+	
+	color: #fff;
+	
+	@include background-image(linear-gradient(lighten($myColor, 10%), $myColor));
+	@include box-shadow(0 2px 0 darken($myColor, 20%));
+	@include transition-property(background);
+	@include transition-duration(0.25s);
+
+	/* --------- Button States ---------- */
+
+	&:active,
+	&.active,
+	&:focus,
+	&.focus,
+	&:hover,
+	&.hover {
+		// color: #fff;
+		// text-decoration: none;
+	}
+
+	&.hover,
+	&:hover {
+		@include background-image(linear-gradient(lighten($myColor, 20%), lighten($myColor, 10%)));
+	}
+
+	&.active,
+	&:active { 
+		@include box-shadow(0 1px 0 light($myColor, 10%));
+	}
+
+	&.focus,
+	&:focus { 
+		@include background-image(linear-gradient(lighten($myColor, 20%), lighten($myColor, 10%)));
+	}
+
+	/* --------- Button Sizes ---------- */
+
+	// Styles
+
+	&.q-button-link {
+		
+		color: $myColor;
+		background-color: transparent;
+		border: 1px solid transparent;
+		@include box-shadow(none);
+		@include border-radius(0);
+
+		span {
+			color: $myColor;			
+		}
+		
+		&:focus,
+		&:hover {
+			text-decoration: underline;
+			color: lighten($myColor, 10%) !important;
+			> span.label {
+				color: lighten($myColor, 10%) !important;
+			}
+		}
+		&:active {
+			color: lighten($myColor, 10%) !important;
+			> span.label {
+				color: lighten($myColor, 10%) !important;
+			}
+		}
+		&:focus {
+			color: lighten($myColor, 10%) !important;
+			> span.label {
+				color: lighten($myColor, 10%) !important;
+			}
+		}
+
+	}
+
+	&.q-button-hollow {
+
+		color: $myColor;
+		border: 1px solid lighten($myColor, 10%);
+		background: transparent;
+		
+		@include box-shadow(none);
+		@include text-shadow(none);
+
+		&:hover,
+		&:active {
+			color: lighten($myColor, 10%);
+			border: 1px solid lighten($myColor, 10%);
+		}
+		
+		&:active {
+			color: #fff;
+			background: $myColor;
+			border-color: $myColor;
+		}
+
+
+	}
+
+	&.q-button-stealth {
+
+		color: rgba($q-color-lightgrey, 0.75);
+		border: 1px solid rgba($q-color-lightgrey, 0.5);
+		background-color: transparent;
+		
+		@include box-shadow(none);
+		@include text-shadow(none);
+
+		&:focus,
+		&:hover {
+			border-color: $myColor;
+			color: #fff;
+			background: $myColor;
+			@include box-shadow(0 2px 0 darken($myColor, 20%));
+			@include text-shadow(0 1px rgba(0, 0, 0, 0.4));
+		}
+
+		&:active {
+			@include box-shadow(0 1px 0 darken($myColor, 20%));
+		}
+
+	}
+
+}
