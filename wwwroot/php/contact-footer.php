@@ -14,6 +14,7 @@ if(isset($_POST['q-form-footer-contact-email'])) {
       !isset($_POST["q-form-footer-contact-message"])
       ) {
         error();
+      return;
     }
 
     $contactEmail = $_POST["q-form-footer-contact-email"];
@@ -23,6 +24,7 @@ if(isset($_POST['q-form-footer-contact-email'])) {
  
     if(!preg_match($email_exp,$contactEmail)) {
       error();
+      return;
     }
     
     $SendEmail_To = "quintin.schnehage@gmail.com";
@@ -59,6 +61,7 @@ if(isset($_POST['q-form-footer-contact-email'])) {
 else
 {
   error();
+  return;
 }
  
 ?>

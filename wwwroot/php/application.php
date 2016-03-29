@@ -23,6 +23,7 @@ if(isset($_POST['q-form-application-email'])) {
       ) 
     {
         error();
+        return;
     }
 
     $contactname = $_POST["q-form-application-name"];
@@ -39,6 +40,7 @@ if(isset($_POST['q-form-application-email'])) {
  
     if(!preg_match($email_exp,$contactemail)) {
       error();
+      return;
     }
     
     $SendEmail_To = "quintin.schnehage@gmail.com";
@@ -89,6 +91,7 @@ if(isset($_POST['q-form-application-email'])) {
 else
 {
   error();
+  return;
 }
  
 ?>

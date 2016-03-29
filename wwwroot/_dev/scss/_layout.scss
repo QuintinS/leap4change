@@ -75,6 +75,15 @@
  			// right:0;
  		}
 
+		#q-header {
+			.current {
+				> a {
+					color: $q-color-primary !important;
+				}
+			}
+		}
+ 		
+
  	}
 
 	@media (max-width: $q-media-breakpoint-4 - 1) {
@@ -195,6 +204,11 @@
 	 		padding-top: 40px;
 
 	 		color: #fff;
+
+	 		h1, h2, h3, h4, h5 {
+	 			color: #fff;
+	 			@include text-shadow(0 0 5px rgba(0,0,0,0.25));
+	 		}
 
 	 		.q-footer-body {
 
@@ -326,6 +340,8 @@
 				
 			}
 
+
+
 		}
 
 		.q-footer-header img {
@@ -440,6 +456,14 @@
 					text-align: right;
 				}
 
+			}
+
+		}
+
+		@media only screen and (max-width: $q-media-breakpoint-4 - 1) {
+	
+			#q-footer {
+				background: #0057a3 !important;
 			}
 
 		}

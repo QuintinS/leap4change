@@ -125,11 +125,11 @@ var Site = {
 	   	$("#q-form-footer-contact").validate({
 
 	   		rules: {
-	   			"email-email": {
+	   			"q-form-footer-contact-email": {
 	   				required: true,
 	   				email: true
 	   			},
-	   			"email-message": {
+	   			"q-form-footer-contact-message": {
 	   				required: true,
 	   			},
 	   		},
