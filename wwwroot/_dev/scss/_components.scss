@@ -1,6 +1,99 @@
 @import "compass/css3";
 
 
+.q-facebook-feed-container {
+
+	min-height: 600px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 20px;
+	background: #f2f2f2;
+	border: 1px solid #e7e7e7;
+	border-radius: 6px;
+
+	> .fb-page {
+		@include box-shadow(0 0 10px rgba(0,0,0,.1));
+	}
+}
+
+.q-map-container {
+
+	position:relative;
+	background: #f2f2f2;
+	min-height: 300px;
+	border: 1px solid #e6e6e6;
+
+	@include box-shadow(0 2px 5px rgba(0,0,0,.1));
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		position:absolute;
+		left:0;
+		right:0;
+		bottom:0;
+		top:0;
+	}
+
+}
+
+@media only screen and (max-width: $q-media-breakpoint-4 - 1) {
+
+	.q-address-container {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+}
+
+.q-video-container {
+	
+	width: 600px;
+	margin: 40px;
+	padding: 20px;
+	background: #f2f2f2;
+	border: 1px solid #e7e7e7;
+
+	@include border-radius(6px);
+	@include box-shadow(0 3px 5px rgba(0,0,0,.15));
+
+	.q-video-caption {
+		margin-top: 20px;
+		text-align: center;
+		font-weight: 700;
+	}
+
+	.q-video {
+		
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: $q-media-breakpoint-4 - 1) {
+
+	.q-video-container {
+		width: 100%;
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+
+}
+
+
 /* 	==================================
  	Responsive Images
  	==================================	*/
@@ -15,6 +108,29 @@
 		}
 
  	}
+
+@media only screen and (max-width: $q-media-breakpoint-4 - 1) {
+
+ 	.q-image-container {
+	 	
+	 	img {
+			padding: 0 !important;
+		}
+
+ 	}
+
+}
+
+@media only screen and (min-width: $q-media-breakpoint-4) {
+
+	.q-image-container {
+	 	&.q-content-image {
+			width: 60%;
+	 	}
+	}
+	 	
+}
+ 	
 
 
 @media only screen and (max-width: $q-media-breakpoint-4 - 1) {

@@ -115,16 +115,6 @@ var Site = {
             });
         }
     },
-    ScrollMagic: {
-        controller: new ScrollMagic.Controller(),
-        init: function() {
-            new ScrollMagic.Scene({
-                duration: 100,
-                // the scene should last for a scroll distance of 100px
-                offset: 50
-            }).setPin("#my-sticky-element").addTo(controller);
-        }
-    },
     assignEventListeners: function() {
         $('a[href*="#"]:not([href="#"])').on("click", Site.functions.scrollTo);
         $("#q-menu-button").on("click", Site.Menu.expand);
@@ -163,9 +153,6 @@ var Site = {
         $(".flexslider").flexslider({
             animation: "slide"
         });
-        $('[data-parallax="scroll"]').parallax({
-            iosFix: true
-        });
     }
 };
 
@@ -202,5 +189,9 @@ $(document).ready(function() {
 });
 
 // Can also be used with $(document).ready()
-$(window).load(function() {});
+$(window).load(function() {
+    $('[data-parallax="scroll"]').parallax({
+        iosFix: true
+    });
+});
 //# sourceMappingURL=template.js.map

@@ -159,18 +159,6 @@ var Site = {
 
     },
 
-    ScrollMagic: {
-	   controller: new ScrollMagic.Controller(),
-	   init: function(){
-		  new ScrollMagic.Scene({
-				duration: 100,    // the scene should last for a scroll distance of 100px
-				offset: 50        // start this scene after scrolling for 50px
-		  })
-		  .setPin("#my-sticky-element") // pins the element for the the scene's duration
-		  .addTo(controller); // assign the scene to the controller
-	   }
-    },
-
     assignEventListeners: function(){
 	   $('a[href*="#"]:not([href="#"])').on("click", Site.functions.scrollTo);
 	   $('#q-menu-button').on("click", Site.Menu.expand);
@@ -233,7 +221,7 @@ var Site = {
 		  animation: "slide"
 	   });
 
-	   $('[data-parallax="scroll"]').parallax({iosFix: true});
+	   // $('[data-parallax="scroll"]').parallax({iosFix: true});
 
     }
 
@@ -261,6 +249,6 @@ $(document).ready(function(){
 
 // Can also be used with $(document).ready()
 $(window).load(function() {
-    
+    $('[data-parallax="scroll"]').parallax({iosFix: true});
 });
 //# sourceMappingURL=template.js.map

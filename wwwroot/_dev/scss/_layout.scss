@@ -4,6 +4,11 @@
 
  	#q-header {
 
+ 		nav {
+ 			// background: #fff;
+ 			// @extend .clearfix;
+ 		}
+
  		#q-header-logo-link {
  			display: inline-block;
  			width: 150px;
@@ -49,8 +54,11 @@
 		.q-header-slogan {
 			color: #0d83c7;
 			font-weight: 700;
-			font-style: italic;
-			font-size: 32px;
+			// font-style: italic;
+			// font-size: 32px;
+			font-family: "Densia Sans",Helvetica,Arial,sans-serif;
+		    font-size: 44px;
+		    font-style: normal;
 			float:right;
 			margin-bottom: 15px;
 		}
@@ -80,6 +88,10 @@
 				> a {
 					color: $q-color-primary !important;
 				}
+			}
+			.q-header-main {
+				background: url(/images/background-header.jpg);
+				background-size: 100%;
 			}
 		}
  		
